@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: sans-serif;
+  }
+  header {
+    background-color: lightcoral;
+    padding: 10px;
+  }
+  header h1 {
+    font-size: xx-large;
+    font-weight: bold;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .column {
+    width: 100%;
+    border: 1px solid black;
+    flex-direction: row;
+    background-color: lightblue;
+  }
+  .column h2 {
+    font-size: large;
+    font-weight: bold;
+  }
+  .column > a {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .column > a > img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  .column > a > p {
+    font-size: 16px;
+  }
+  .carousel {
+    --current-slide: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 0;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.1s;
+  }
+  .carousel-button:hover {
+    color: grey;
+  }
+  .carousel-button_next {
+    right: 0;
+  }
+  .slides {
+    display: flex;
+    width: 10%;
+    transform: translateX(calc(-110% * var(--current-slide)));
+  }
+  .slide {
+    flex: 0 0 100%;
+  }
+  @media screen and (min-width: 768px) {
+    .carousel-button {
+      font-size: 2rem;
+      margin: 1rem;
+    }
+  }
+  footer {
+    background-color: #bbb;
+    padding: 10px;
+  }
