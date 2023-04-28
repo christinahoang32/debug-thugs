@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/css/modal.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 <title>Movie Fun Time</title>
 </head>
 <body>
@@ -14,6 +15,21 @@
       <h1>Debug Thug's Movie Fun Time!</h1>
     </header>
     <main>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Movie Title</h3><br/>
+        <p>Movie Description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sunt saepe veritatis ea. Accusamus eius provident sequi earum perspiciatis sed, laboriosam ipsam unde, aliquid deserunt odit accusantium. Repellendus sapiente, deleniti amet sit dolor maiores aliquid ratione, molestiae, fugit cum cumque? Cumque laudantium blanditiis vero natus inventore unde dicta architecto quidem.</p><br/>
+        <p>Actors: List actors here</p><br/>
+        <p>Movie ratings goes here</p><br/>
+        <p>Movie trailer goes here</p><br/>
+      </div>
+
+    </div>
+
       <div class="column">
         <h2>Coming Soon</h2>
         <p>See what great films are coming out this year!</p>
@@ -25,11 +41,13 @@
           <span class="fa-solid fa-circle-chevron-right"></span></button>
         </div>
         <div class="slides" data-carousel-slides-container>
+          <button class='slide' id="myBtn">Open Modal</button>
           <a class='slide' href="https://www.google.com">Google</a>
           <a class='slide' href="https://www.yahoo.com">Yahoo</a>
           <a class='slide' href="https://www.bing.com">Bing</a>
           <a class='slide' href="https://www.amazon.com">Amazon</a>
           <a class='slide' href="https://www.ebay.com">Ebay</a>
+          <button class='slide' id="myBtn">Open Modal</button>
           <a class='slide' href="https://www.facebook.com">Facebook</a>
           <a class='slide' href="https://www.twitter.com">Twitter</a>
           <a class='slide' href="https://www.instagram.com">Instagram</a>
@@ -105,6 +123,8 @@
     <footer>
       <p>Copyright &copy; Debug Thugs 2023</p>
     </footer>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
     crossorigin="anonymous"></script>
