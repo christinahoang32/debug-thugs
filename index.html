@@ -1,133 +1,176 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="assets/css/modal.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-<title>Movie Fun Time</title>
-</head>
+    <!-- Import font-awesome somewhere in the HTML -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="syle.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+      <h1 class="box has-background-primary-dark is-size-1 has-text-weight-bold">Debug Thug's Movie Database<span><button href="favorite.html" class="button is-link navbar-end button mb-3 is-grey has-text-weight-bold">Favorites</button></span></h1>
+      
+    </head>
+    
 <body>
-    <header>
-      <h1>Debug Thug's Movie Fun Time!</h1>
-    </header>
-    <main>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h3>Movie Title</h3><br/>
-        <p>Movie Description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sunt saepe veritatis ea. Accusamus eius provident sequi earum perspiciatis sed, laboriosam ipsam unde, aliquid deserunt odit accusantium. Repellendus sapiente, deleniti amet sit dolor maiores aliquid ratione, molestiae, fugit cum cumque? Cumque laudantium blanditiis vero natus inventore unde dicta architecto quidem.</p><br/>
-        <p>Actors: List actors here</p><br/>
-        <p>Movie ratings goes here</p><br/>
-        <p>Movie trailer goes here</p><br/>
+      <div class="border featured">
+        
+        <h1 class="has-background-grey-light box is-size-4 has-text-weight-bold">In Theaters Now!</h1>
+        
+        <div class="has-background-link-light section is-medium carousel" data-carousel>
+          <div class="carousel-buttons">
+            <button
+              class="carousel-button carousel-button_previous"
+              data-carousel-button-previous
+            >
+              <span class="fas fa-chevron-circle-left"></span>
+            </button>
+            <button
+              class="carousel-button carousel-button_next"
+              data-carousel-button-next
+            >
+            <span class="fas fa-chevron-circle-right"></span>
+            </button>
+          </div>
+      
+        <div class="has-text-centered slides" data-carousel-slides-container>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <h2 class="is-size-4">Slide 1 heading</h2>
+            <p>*Insert Image*
+          </div>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <h2 class="is-size-4">Slide 2 heading</h2>
+            <p>*Insert Image* 
+          </div>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <h2 class="is-size-4">Slide 3 heading</h2>
+            <p>*Insert Image* 
+          </div>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <h2 class="is-size-4">Slide 4 heading</h2>
+            <p>*Insert Image* 
+          </div>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <h2 class="is-size-4">Slide 5 heading</h2>
+            <p>*Insert Image* 
+          </div>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <h2 class="is-size-4">Slide 6 heading</h2>
+            <p>*Insert Image*  
+          </div>
+        </div>
+      </div>
+      
+      <div class="coming-soon">
+        
+        <h1 class="has-background-grey-light box is-size-4 has-text-weight-bold">Coming to Theaters Soon!</h1>
+        
+        <div class="has-background-link-light section is-medium carousel" data-carousel>
+          <div class="carousel-buttons">
+            <button
+              class="carousel-button carousel-button_previous"
+              data-carousel-button-previous
+            >
+              <span class="fas fa-chevron-circle-left"></span>
+            </button>
+            <button
+              class="carousel-button carousel-button_next"
+              data-carousel-button-next
+            >
+            <span class="fas fa-chevron-circle-right"></span>
+            </button>
+          </div>
+      
+        <div class="has-text-centered slides" data-carousel-slides-container>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <h2 class="is-size-4">Slide 1 heading</h2>
+            <p>*Insert Image*
+          </div>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <h2 class="is-size-4">Slide 2 heading</h2>
+            <p>*Insert Image*  
+          </div>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <h2 class="is-size-4">Slide 3 heading</h2>
+            <p>*Insert Image*  
+          </div>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <h2 class="is-size-4">Slide 4 heading</h2>
+            <p>*Insert Image*  
+          </div>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <h2 class="is-size-4">Slide 5 heading</h2>
+            <p>*Insert Image*  
+          </div>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <h2 class="is-size-4">Slide 6 heading</h2>
+            <p>*Insert Image*  
+          </div>
+        </div>
       </div>
 
-    </div>
+      <div class="favorites">
+        
+        <h1 class="has-background-grey-light box is-size-4 has-text-weight-bold">Favorites to Watch Later!</h1>
+        
+        <div class="has-background-link-light section is-medium carousel" data-carousel>
+          <div class="carousel-buttons">
+            <button
+              class="carousel-button carousel-button_previous"
+              data-carousel-button-previous
+            >
+              <span class="fas fa-chevron-circle-left"></span>
+            </button>
+            <button
+              class="carousel-button carousel-button_next"
+              data-carousel-button-next
+            >
+            <span class="fas fa-chevron-circle-right"></span>
+            </button>
+          </div>
+      
+        <div class="has-text-centered slides" data-carousel-slides-container>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <h2 class="is-size-4">Slide 1 heading</h2>
+            <p>*Insert Image*
+          </div>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <h2 class="is-size-4">Slide 2 heading</h2>
+            <p>Slide 2 content  
+          </div>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <h2 class="is-size-4">Slide 3 heading</h2>
+            <p>*Insert Image*  
+          </div>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <h2 class="is-size-4">Slide 4 heading</h2>
+            <p>*Insert Image*  
+          </div>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <h2 class="is-size-4">Slide 5 heading</h2>
+            <p>*Insert Image*  
+          </div>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <h2 class="is-size-4">Slide 6 heading</h2>
+            <p>*Insert Image*  
+          </div>
+        </div>
+      </div>
 
-      <div class="column">
-        <h2>Coming Soon</h2>
-        <p>See what great films are coming out this year!</p>
-        <div class="carousel" data-carousel>
-          <div class="carousel-buttons"></div>
-          <div button="carousel-button carousel-button_previous" data-carousel-button-previous>
-          <span class="fa-solid fa-circle-chevron-left"></span></button>
-          <div button="carousel-button carousel-button_next" data-carousel-button-next>
-          <span class="fa-solid fa-circle-chevron-right"></span></button>
-        </div>
-        <div class="slides" data-carousel-slides-container>
-          <button class='slide' id="myBtn">Open Modal</button>
-          <a class='slide' href="https://www.google.com">Google</a>
-          <a class='slide' href="https://www.yahoo.com">Yahoo</a>
-          <a class='slide' href="https://www.bing.com">Bing</a>
-          <a class='slide' href="https://www.amazon.com">Amazon</a>
-          <a class='slide' href="https://www.ebay.com">Ebay</a>
-          <button class='slide' id="myBtn">Open Modal</button>
-          <a class='slide' href="https://www.facebook.com">Facebook</a>
-          <a class='slide' href="https://www.twitter.com">Twitter</a>
-          <a class='slide' href="https://www.instagram.com">Instagram</a>
-          <a class='slide' href="https://www.linkedin.com">LinkedIn</a>
-          <a class='slide' href="https://www.pinterest.com">Pinterest</a>
-          <a class='slide' href="https://www.youtube.com">YouTube</a>
-          <a class='slide' href="https://www.netflix.com">Netflix</a>
-          <a class='slide' href="https://www.hulu.com">Hulu</a>
-          <a class='slide' href="https://www.amazon.primevideo.com">Amazon Prime Video</a>
-          <a class='slide' href="https://www.disneyplus.com">Disney+</a>
-          <a class='slide' href="https://www.hbomax.com">HBO Max</a>
-        </div>
-      </div>
-      <div class="column">
-        <h2>In Theatres Now</h2>
-        <p>What's HOT🔥in Theatres now!</p>
-        <div class="carousel" data-carousel>
-          <div class="carousel-buttons"></div>
-          <div button="carousel-button carousel-button_previous" data-carousel-button-previous>
-          <span class="fa-solid fa-circle-chevron-left"></span></button>
-          <div button="carousel-button carousel-button_next" data-carousel-button-next>
-          <span class="fa-solid fa-circle-chevron-right"></span></button>
-        </div>
-        <div class="slides" data-carousel-slides-container>
-          <a class='slide' href="https://www.google.com">Google</a>
-          <a class='slide' href="https://www.yahoo.com">Yahoo</a>
-          <a class='slide' href="https://www.bing.com">Bing</a>
-          <a class='slide' href="https://www.amazon.com">Amazon</a>
-          <a class='slide' href="https://www.ebay.com">Ebay</a>
-          <a class='slide' href="https://www.facebook.com">Facebook</a>
-          <a class='slide' href="https://www.twitter.com">Twitter</a>
-          <a class='slide' href="https://www.instagram.com">Instagram</a>
-          <a class='slide' href="https://www.linkedin.com">LinkedIn</a>
-          <a class='slide' href="https://www.pinterest.com">Pinterest</a>
-          <a class='slide' href="https://www.youtube.com">YouTube</a>
-          <a class='slide' href="https://www.netflix.com">Netflix</a>
-          <a class='slide' href="https://www.hulu.com">Hulu</a>
-          <a class='slide' href="https://www.amazon.primevideo.com">Amazon Prime Video</a>
-          <a class='slide' href="https://www.disneyplus.com">Disney+</a>
-          <a class='slide' href="https://www.hbomax.com">HBO Max</a>
-        </div>
-      </div>
-      <div class="column">
-        <h2>Favorites</h2>
-        <p>List of your favorite movies to watch later!</p>
-        <div class="carousel" data-carousel>
-          <div class="carousel-buttons"></div>
-          <div button="carousel-button carousel-button_previous" data-carousel-button-previous>
-          <span class="fa-solid fa-circle-chevron-left"></span></button>
-          <div button="carousel-button carousel-button_next" data-carousel-button-next>
-          <span class="fa-solid fa-circle-chevron-right"></span></button>
-        </div>
-        <div class="slides" data-carousel-slides-container>
-          <a class='slide' href="https://www.google.com">Google</a>
-          <a class='slide' href="https://www.yahoo.com">Yahoo</a>
-          <a class='slide' href="https://www.bing.com">Bing</a>
-          <a class='slide' href="https://www.amazon.com">Amazon</a>
-          <a class='slide' href="https://www.ebay.com">Ebay</a>
-          <a class='slide' href="https://www.facebook.com">Facebook</a>
-          <a class='slide' href="https://www.twitter.com">Twitter</a>
-          <a class='slide' href="https://www.instagram.com">Instagram</a>
-          <a class='slide' href="https://www.linkedin.com">LinkedIn</a>
-          <a class='slide' href="https://www.pinterest.com">Pinterest</a>
-          <a class='slide' href="https://www.youtube.com">YouTube</a>
-          <a class='slide' href="https://www.netflix.com">Netflix</a>
-          <a class='slide' href="https://www.hulu.com">Hulu</a>
-          <a class='slide' href="https://www.amazon.primevideo.com">Amazon Prime Video</a>
-          <a class='slide' href="https://www.disneyplus.com">Disney+</a>
-          <a class='slide' href="https://www.hbomax.com">HBO Max</a>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <p>Copyright &copy; Debug Thugs 2023</p>
-    </footer>
-    <script src="assets/js/modal.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
-    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
-    crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
-  </body>
-  </html>
+
+<script src=script.js></script>
+
+</body>
