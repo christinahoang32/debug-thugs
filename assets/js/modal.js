@@ -1,11 +1,46 @@
 // Get the modal
 var modal = document.getElementById("myModal");
+var modalContent = document.getElementById("modal-data");
+var movie = document.querySelector('.myBtn');
+var imdbID = movie.getAttribute('data-id');
+
+console.log(imdbID);
 
 // Get the button that opens the modal
-// var btns = document.getElementsByClassName("myBtn");
+//var button = document.getElementsByClassName("myBtn");
 var btns = $(".myBtn")
 
-console.log(btns)
+btns.on("click", function () {
+  // Fetch API to retrieve data  
+
+  
+  fetch("http://www.omdbapi.com/?i="+imdbID+"&apikey=63da6da2")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      // Extract relevant data
+
+      console.log(data);
+
+      var title = data.Title;
+      var description = data.Plot;
+      var poster = data.Poster;
+
+      // Update modal content dynamically
+      modalContent.innerHTML = `
+        <h2>${title}</h2>
+        <p>${description}</p>
+        <img src="${poster}" alt="${title} movie poster">
+      `;
+
+      // Display the modal
+      modal.style.display = "block";
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+});
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -49,6 +84,6 @@ likeBtn.addEventListener("click", function() {
   }
 
   favoritesArr.push(data)
-
+  
   localStorage.setItem("favorites", JSON.stringify(favoritesArr))
 })
