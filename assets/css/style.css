@@ -15,20 +15,22 @@
   }
   main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
+  
   .column {
     width: 100%;
+    padding: 2%;
     border: 1px solid black;
-    flex-direction: row;
+    flex-direction: column;
     background-color: lightblue;
   }
   .column h2 {
     font-size: large;
     font-weight: bold;
   }
-  .column > a {
+  /*.column > a {
     border: 1px solid black;
     padding: 10px;
     background-color: #fff;
@@ -37,14 +39,14 @@
     align-items: center;
     justify-content: center;
   }
-  .column > a > img {
+  .column > p > img {
     width: 50px;
     height: 50px;
     margin-right: 10px;
   }
-  .column > a > p {
+  .column > p {
     font-size: 16px;
-  }
+  }*/
   .carousel {
     --current-slide: 0;
     position: relative;
