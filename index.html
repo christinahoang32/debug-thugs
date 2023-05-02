@@ -10,31 +10,30 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 <title>Movie Fun Time</title>
 </head>
-<body>
-    <header>
-      <h1>Debug Thug's Movie Fun Time!</h1>
-    </header>
-    <main>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
 
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div id="modal-data"></div>
-        <!---<img id="modal-img" src="https://m.media-amazon.com/images/M/MV5BOTJhNzlmNzctNTU5Yy00N2YwLThhMjQtZDM0YjEzN2Y0ZjNhXkEyXkFqcGdeQXVyMTEwMTQ4MzU5._V1_Ratio0.6699_AL_.jpg"/>
-        <h3 id="modal-title">Barbie Placeholder</h3><br/>
-        <p>Movie Description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sunt saepe veritatis ea. Accusamus eius provident sequi earum perspiciatis sed, laboriosam ipsam unde, aliquid deserunt odit accusantium. Repellendus sapiente, deleniti amet sit dolor maiores aliquid ratione, molestiae, fugit cum cumque? Cumque laudantium blanditiis vero natus inventore unde dicta architecto quidem.</p><br/>
-        <p>Actors: List actors here</p><br/>
-        <p>Movie ratings goes here</p><br/>
-        <div class="container is-flex is-flex-direction-row is-justify-content-space-between">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/GRyt3Ov4zz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div>  
-          <button id="like-btn">Like</button>
-        </div>--->
-      </div>
+   <header>
+    <h1 class="box has-background-primary-dark is-size-1 has-text-weight-bold">Debug Thug's Movie Database<span></h1>
+    <nav class="breadcrumb is-right" aria-label="breadcrumbs">
+      <ul>
+       <li class="button is-primary is-light is-active" aria-current="page"><a href="index.html">Home</a></li>
+       <li class="button is-primary"><a href="favorite.html">Favorites</a></li>
+       <li class="button is-primary"><a href="signup.html">Register</a></li>
+       <li class="button is-primary"><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+   <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="modal-data"></div>
+    <button id="like-btn">Like</button>
     </div>
+  </div>
+
+ <!--
     <div>
       <div class='myBtn' data-id="tt1517268">
         <img src="https://m.media-amazon.com/images/M/MV5BOTJhNzlmNzctNTU5Yy00N2YwLThhMjQtZDM0YjEzN2Y0ZjNhXkEyXkFqcGdeQXVyMTEwMTQ4MzU5._V1_Ratio0.6699_AL_.jpg"/>
@@ -45,17 +44,21 @@
         <p>Another Title</p>
       </div>
     </div>
-      <section class="column">
-      <h2>Coming Soon</h2>
-      <p>See what great films are coming out this year!</p>
-      <div class="carousel" data-carousel>
-        <div class="carousel-buttons"></div>
-        <div button="carousel-button carousel-button_previous" data-carousel-button-previous>
-        <span class="fa-solid fa-circle-chevron-left"></span></button>
-        <div button="carousel-button carousel-button_next" data-carousel-button-next>
-        <span class="fa-solid fa-circle-chevron-right"></span></button>
-      </div>
-      <div class="slides" data-carousel-slides-container>
+  -->
+  
+  <body>
+   <div class="border featured">   
+    <h1 class="has-background-grey-light box is-size-4 has-text-weight-bold">In Theaters Now</h1>
+      
+    <div class="has-background-link-light section is-medium carousel" data-carousel>
+     <div class="carousel-buttons">
+      <button class="carousel-button carousel-button_previous" data-carousel-button-previous>
+      <span class="fas fa-chevron-circle-left"></span></button>
+      <button class="carousel-button carousel-button_next" data-carousel-button-next>
+      <span class="fas fa-chevron-circle-right"></span></button>
+    </div> 
+     
+    <div class="has-text-centered slides" data-carousel-slides-container>
         <div class='slide myBtn' data-id="tt1517268">
           <img src="https://m.media-amazon.com/images/M/MV5BOTJhNzlmNzctNTU5Yy00N2YwLThhMjQtZDM0YjEzN2Y0ZjNhXkEyXkFqcGdeQXVyMTEwMTQ4MzU5._V1_Ratio0.6699_AL_.jpg"/>
           <p>Title</p>
@@ -63,89 +66,112 @@
         <div class='slide myBtn'>
           <img src="https://m.media-amazon.com/images/M/MV5BOTJhNzlmNzctNTU5Yy00N2YwLThhMjQtZDM0YjEzN2Y0ZjNhXkEyXkFqcGdeQXVyMTEwMTQ4MzU5._V1_Ratio0.6699_AL_.jpg"/>
           <p>Another Title</p>
+        </div> 
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <h2 class="is-size-4">Big George Foreman</h2>
+          <img src="Movie-IMG\Outnow\BigGeorgeForeman2023.jpg"/>
+        </div>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <h2 class="is-size-4">Creed 3</h2>
+          <img src="Movie-IMG\Outnow\CreedIII_NewPoster_Press2765x4096.jpg"/>
+        </div>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <h2 class="is-size-4">Dungeons & Dragons Honor Thieves</h2>
+          <img src="Movie-IMG\Outnow\DungeonsDragonsHonorThieves2023.jpg"/>
+        </div>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <h2 class="is-size-4">John Wick 4</h2>
+          <img src="Movie-IMG\Outnow\JW4_RGB.jpg"/>
+        </div>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <h2 class="is-size-4">Polite PoliteSociety_Poster</h2>
+          <img src="Movie-IMG\Outnow\PoliteSociety_Poster.jpg"/>
+        </div>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <h2 class="is-size-4">Return of the jedi</h2>
+          <img src="Movie-IMG\Outnow\ROTJ_40_ONESHEET-WEB.jpg"/>
+        </div>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <h2 class="is-size-4">Super Mario Bro's</h2>
+          <img src="Movie-IMG\Outnow\SMB_2023.jpg"/>
+        </div>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <h2 class="is-size-4">Suzume</h2>
+          <img src="Movie-IMG\Outnow\Suzume_TheatricalPoster_US_400x600 (1).jpg"/>
+        </div>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <h2 class="is-size-4">Scream 6</h2>
+          <img src="Movie-IMG\Outnow\under10mb_Scream6_Online_Payoff_FM2.jpg"/>
         </div>
         <!-- <button class='slide' id="myBtn">Open Modal</button> -->
-        <a class='slide' href="https://www.google.com">Google</a>
-        <a class='slide' href="https://www.yahoo.com">Yahoo</a>
-        <a class='slide' href="https://www.bing.com">Bing</a>
-        <a class='slide' href="https://www.amazon.com">Amazon</a>
-        <a class='slide' href="https://www.ebay.com">Ebay</a>
-        <button class='slide' id="myBtn">Open Modal</button>
-        <a class='slide' href="https://www.facebook.com">Facebook</a>
-        <a class='slide' href="https://www.twitter.com">Twitter</a>
-        <a class='slide' href="https://www.instagram.com">Instagram</a>
-        <a class='slide' href="https://www.linkedin.com">LinkedIn</a>
-        <a class='slide' href="https://www.pinterest.com">Pinterest</a>
-        <a class='slide' href="https://www.youtube.com">YouTube</a>
-        <a class='slide' href="https://www.netflix.com">Netflix</a>
-        <a class='slide' href="https://www.hulu.com">Hulu</a>
-        <a class='slide' href="https://www.amazon.primevideo.com">Amazon Prime Video</a>
-        <a class='slide' href="https://www.disneyplus.com">Disney+</a>
-        <a class='slide' href="https://www.hbomax.com">HBO Max</a>
+     </div>
+    </div>  
+    <div class="coming-soon">
+     <h1 class="has-background-grey-light box is-size-4 has-text-weight-bold">Coming to Theaters Soon!</h1> 
+      <div class="has-background-link-light section is-medium carousel" data-carousel>
+      <div class="carousel-buttons">
+      <button class="carousel-button carousel-button_previous" data-carousel-button-previous>
+        <span class="fas fa-chevron-circle-left"></span></button>
+        <button class="carousel-button carousel-button_next" data-carousel-button-next>
+        <span class="fas fa-chevron-circle-right"></span></button>
       </div>
-    </section>
-    <section class="column">
-      <h2>In Theatres Now</h2>
-      <p>What's HOT🔥in Theatres now!</p>
-      <div class="carousel" data-carousel>
-        <div class="carousel-buttons"></div>
-        <div button="carousel-button carousel-button_previous" data-carousel-button-previous>
-        <span class="fa-solid fa-circle-chevron-left"></span></button>
-        <div button="carousel-button carousel-button_next" data-carousel-button-next>
-        <span class="fa-solid fa-circle-chevron-right"></span></button>
+      <div class="has-text-centered slides" data-carousel-slides-container>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <h2 class="is-size-4">One Ranger</h2>
+          <img src="Movie-IMG\Coming-soon\049_OneRanger_KeyArt_sRGB_2x3_Collider.jpg"/>
+        </div>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <h2 class="is-size-4">Anxious Nation</h2>
+          <img src="Movie-IMG\Coming-soon\AnxiousNation_5x7_Mar9_HiRes.jpg"/>  
+        </div>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <h2 class="is-size-4">Double Life</h2>
+          <img src="Movie-IMG\Coming-soon\DOUBLELIFE_EN_2000x3000_01_R8.jpg"/> 
+        </div>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <h2 class="is-size-4">Gaurdians OF the Galaxy</h2>
+          <img src="Movie-IMG\Coming-soon\FND_poster_GOTG3-Presale.jpg"/>  
+        </div>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <h2 class="is-size-4">Jodi</h2>
+          <img src="Movie-IMG\Coming-soon\jodi-posterart.jpg"/>  
+        </div>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <h2 class="is-size-4">Land of Gold</h2>
+          <img src="Movie-IMG\Coming-soon\LandOfGold_TheatricalPoster.jpg"/>  
+        </div>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <h2 class="is-size-4">Champion</h2>
+          <img src="Movie-IMG\Coming-soon\LiveinHD_May22_Fathom2223TitleAssets_1000x1480_CHAMPION.jpg"/>  
+        </div>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <h2 class="is-size-4">Ponyo</h2>
+          <img src="Movie-IMG\Coming-soon\Ponyo.jpg"/>  
+        </div>
+        <div class="slide">
+          <!-- Anything can be here. Each slide can have any content -->
+          <h2 class="is-size-4">Rally Road Racers</h2>
+          <img src="Movie-IMG\Coming-soon\rallyroadracers-posterart2.jpg"/> 
+        </div>
       </div>
-      <div class="slides" data-carousel-slides-container>
-        <a class='slide' href="https://www.google.com">Google</a>
-        <a class='slide' href="https://www.yahoo.com">Yahoo</a>
-        <a class='slide' href="https://www.bing.com">Bing</a>
-        <a class='slide' href="https://www.amazon.com">Amazon</a>
-        <a class='slide' href="https://www.ebay.com">Ebay</a>
-        <a class='slide' href="https://www.facebook.com">Facebook</a>
-        <a class='slide' href="https://www.twitter.com">Twitter</a>
-        <a class='slide' href="https://www.instagram.com">Instagram</a>
-        <a class='slide' href="https://www.linkedin.com">LinkedIn</a>
-        <a class='slide' href="https://www.pinterest.com">Pinterest</a>
-        <a class='slide' href="https://www.youtube.com">YouTube</a>
-        <a class='slide' href="https://www.netflix.com">Netflix</a>
-        <a class='slide' href="https://www.hulu.com">Hulu</a>
-        <a class='slide' href="https://www.amazon.primevideo.com">Amazon Prime Video</a>
-        <a class='slide' href="https://www.disneyplus.com">Disney+</a>
-        <a class='slide' href="https://www.hbomax.com">HBO Max</a>
-      </div>
-    </section>
-    <section class="column">
-      <h2>Favorites</h2>
-      <p>List of your favorite movies to watch later!</p>
-      <div class="carousel" data-carousel>
-        <div class="carousel-buttons"></div>
-        <div button="carousel-button carousel-button_previous" data-carousel-button-previous>
-        <span class="fa-solid fa-circle-chevron-left"></span></button>
-        <div button="carousel-button carousel-button_next" data-carousel-button-next>
-        <span class="fa-solid fa-circle-chevron-right"></span></button>
-      </div>
-      <div class="slides" data-carousel-slides-container id="favorites-list">
-        <!-- <div>
-          <img src="https://m.media-amazon.com/images/M/MV5BOTJhNzlmNzctNTU5Yy00N2YwLThhMjQtZDM0YjEzN2Y0ZjNhXkEyXkFqcGdeQXVyMTEwMTQ4MzU5._V1_Ratio0.6699_AL_.jpg"/>
-          <p>Mario</p>
-        </div> -->
-        <!-- <a class='slide' href="https://www.google.com">Google</a>
-        <a class='slide' href="https://www.yahoo.com">Yahoo</a>
-        <a class='slide' href="https://www.bing.com">Bing</a>
-        <a class='slide' href="https://www.amazon.com">Amazon</a>
-        <a class='slide' href="https://www.ebay.com">Ebay</a>
-        <a class='slide' href="https://www.facebook.com">Facebook</a>
-        <a class='slide' href="https://www.twitter.com">Twitter</a>
-        <a class='slide' href="https://www.instagram.com">Instagram</a>
-        <a class='slide' href="https://www.linkedin.com">LinkedIn</a>
-        <a class='slide' href="https://www.pinterest.com">Pinterest</a>
-        <a class='slide' href="https://www.youtube.com">YouTube</a>
-        <a class='slide' href="https://www.netflix.com">Netflix</a>
-        <a class='slide' href="https://www.hulu.com">Hulu</a>
-        <a class='slide' href="https://www.amazon.primevideo.com">Amazon Prime Video</a>
-        <a class='slide' href="https://www.disneyplus.com">Disney+</a>
-        <a class='slide' href="https://www.hbomax.com">HBO Max</a> -->
-      </div>
-    </section>
+    </div>   
   </main>
   <footer>
     <p>Copyright &copy; Debug Thugs 2023</p>

@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
 .carousel {
     --current-slide: 0;
     /* we set position relative so absolute position works properly for the buttons */
@@ -51,5 +56,9 @@
     }
   }
 
-  /* Sections */
+  footer {
+    background-color: #bbb;
+    padding: 10px;
+  }
+  
   
