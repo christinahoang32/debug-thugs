@@ -47,17 +47,23 @@
     color: grey;
   }
   .carousel-button_next {
+    left: 0;
+  }
+  .carousel-button_previous {
     right: 0;
+
   }
   .slides {
     display: flex;
     width: 10%;
     transform: translateX(calc(-110% * var(--current-slide)));
-
   }
+
   .slide {
     flex: 0 0 100%;
+    margin:3%;
   }
+  
   @media screen and (min-width: 768px) {
     .carousel-button {
       font-size: 2rem;
