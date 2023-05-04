@@ -83,8 +83,10 @@ function addButton() {
     // Fetch API to retrieve data
     console.log(event.target.parentElement);
     var imdbID = event.target.parentElement.getAttribute("data-id");
+    var modal = document.getElementById("myModal");
+    modal.querySelector(".modal-content").setAttribute("id",imdbID)
 
-    fetch("http://www.omdbapi.com/?i=" + imdbID + "&apikey=63da6da2")
+    fetch("http://www.omdbapi.com/?i=" + imdbID + "&apikey=ce851610")
       .then(function (response) {
         return response.json();
       })
@@ -103,13 +105,14 @@ function addButton() {
   
         // Update modal content dynamically
         modalContent.innerHTML = `
-        <h2>${title}</h2>
+        <h2 class="title"> ${title}</h2>
         <p>${description}</p>
         <p>IMDb Rating: ${ratings}</p>
         <p>Genre: ${genre}</p>
         <p>Motion Picture Rated: ${rated}</p>
         <p>Actors: ${actors}</p>
         <img src="${poster}" alt="${title} movie poster">
+        <img class="modal-img"src="${poster}" alt="${title} movie poster">
       `;
 
         // Display the modal
@@ -158,14 +161,16 @@ likeBtn.addEventListener("click", function () {
   console.log("saving");
   var favoritesArr = JSON.parse(localStorage.getItem("favorites")) || [];
 
-  var title = document.getElementById("modal-title").textContent;
-  var imgURL = document.getElementById("modal-img").src;
+  var modal = document.querySelector(".modal-content");
+  var imgURL = document.querySelector(".modal-img").src;
+  var title = document.querySelector(".title").textContent;
 
   var data = {
     title,
     imgURL,
+    modal
   };
-
+console.log(data)
   favoritesArr.push(data);
 
   localStorage.setItem("favorites", JSON.stringify(favoritesArr));
