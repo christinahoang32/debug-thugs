@@ -86,7 +86,7 @@ function addButton() {
     var modal = document.getElementById("myModal");
     modal.querySelector(".modal-content").setAttribute("id",imdbID)
 
-    fetch("http://www.omdbapi.com/?i=" + imdbID + "&apikey=ce851610")
+    fetch("https://www.omdbapi.com/?i=" + imdbID + "&apikey=ce851610")
       .then(function (response) {
         return response.json();
       })

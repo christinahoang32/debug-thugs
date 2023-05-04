@@ -16,9 +16,10 @@
 
 ## Installation
 
-No need to install anything, just need the link below.
+No need to install anything, just need the links below.
 
-Add in deployed website link here
+Github: https://github.com/christinahoang32/debug-thugs  
+Final Link: https://christinahoang32.github.io/debug-thugs/  
 
 ## Usage
 
@@ -26,9 +27,7 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![alt text](assets/images/mainPage.jpg)
 
 ## Credits
 
@@ -44,7 +43,8 @@ Bulma CSS Framework: https://bulma.io/
 
 **Tutorials:**  
 Modal Tutorial: https://www.w3schools.com/howto/howto_css_modals.asp  
-Web Car: https://web-crunch.com/posts/tailwind-css-movie-production-landing-page  
+Web Carousel: https://web-crunch.com/posts/tailwind-css-movie-production-landing-page  
+
 
 ## Future Features
 
