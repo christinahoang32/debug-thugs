@@ -2,26 +2,40 @@
 var modal = document.getElementById("myModal");
 var modalContent = document.getElementById("modal-data");
 var movie = document.querySelector(".myBtn");
+var inTheaters = document.getElementById("carousel-container1");
+var comingSoon = document.getElementById("carousel-container2");
 
-function getMovieList() {
+function getInTheater() {
   fetch("https://imdb-api.com/en/API/InTheaters/k_ivg2w8iz")
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
       // Extract relevant data
-      displayMovieList(data.items);
+      displayInTheater(data.items);
       console.log(data);
     });
 }
 
-getMovieList();
+function getComingSoon() {
+  fetch("https://imdb-api.com/en/API/ComingSoon/k_ivg2w8iz")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    // Extract relevant data
+    displayComingSoon(data.items);
+    console.log(data);
+  });
+}
 
-function displayMovieList(list) {
-  var movieContainer = document.getElementById("carousel-container");
+getComingSoon();
+getInTheater();
+
+function displayInTheater(list) {
   console.log(list);
+  inTheaters.innerHTML = "";
 
-  movieContainer.innerHTML = "";
   for (var i = 0; i < list.length; i++) {
     var divContainer = document.createElement("div");
     divContainer.setAttribute("data-id", list[i].id);
@@ -34,7 +48,29 @@ function displayMovieList(list) {
     title.textContent = list[i].title;
 
     divContainer.append(poster, title);
-    movieContainer.append(divContainer);
+    inTheaters.append(divContainer);
+  }
+
+  addButton();
+}
+
+function displayComingSoon(list) {
+  console.log(list);
+  comingSoon.innerHTML = "";
+
+  for (var i = 0; i < list.length; i++) {
+    var divContainer = document.createElement("div");
+    divContainer.setAttribute("data-id", list[i].id);
+    divContainer.classList.add("slide", "myBtn");
+
+    var poster = document.createElement("img");
+    poster.setAttribute("src", list[i].image);
+
+    var title = document.createElement("h3");
+    title.textContent = list[i].title;
+
+    divContainer.append(poster, title);
+    comingSoon.append(divContainer);
   }
 
   addButton();
