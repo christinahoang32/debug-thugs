@@ -98,11 +98,20 @@ function addButton() {
         var title = data.Title;
         var description = data.Plot;
         var poster = data.Poster;
-
+        var ratings = data.imdbRating;
+        var genre = data.Genre;
+        var rated = data.Rated;
+        var actors = data.Actors;
+  
         // Update modal content dynamically
         modalContent.innerHTML = `
         <h2 class="title"> ${title}</h2>
         <p>${description}</p>
+        <p>IMDb Rating: ${ratings}</p>
+        <p>Genre: ${genre}</p>
+        <p>Motion Picture Rated: ${rated}</p>
+        <p>Actors: ${actors}</p>
+        <img src="${poster}" alt="${title} movie poster">
         <img class="modal-img"src="${poster}" alt="${title} movie poster">
       `;
 
