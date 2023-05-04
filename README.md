@@ -26,11 +26,13 @@ When you first access the page, an api will pull a list of the movies that are i
 
 ![alt text](assets/images/mainPage.jpg)  
 
-<br><br>When you click on a movie poster image, it will pull up a modal with information about the movie. At the bottom of the modal there's a like button that you can click to save your favorite movies to local storage.<br><br>
+<br>When you click on a movie poster image, it will pull up a modal with information about the movie. At the bottom of the modal there's a like button that you can click to save your favorite movies to local storage.
 
-![alt text](assets/images/modal.jpg)  (will need to update image when final modal information is updated)
+![alt text](assets/images/modal.jpg)  
 
-<br><br>(add one more image that will showcase the favorite tab. Will need to add once favorite page is ready)
+<br>When you click on like in the modal from the main page, it will add all the movies you liked into this favorite page.
+
+![alt text](assets/images/favoritePage.jpg)
 
 ## Credits
 
@@ -52,7 +54,8 @@ YouTube Tutorials: https://www.youtube.com/@ProgrammingDuck
 **Tutors:**  
 Francisco Rivera  
 Kenny Igbechi  
-Erik Hirsch (tutoring session)
+Erik Hirsch (tutoring session)  
+Mila Hose (tutoring session)  
 
 ## Future Features
 
