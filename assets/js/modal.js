@@ -6,7 +6,7 @@ var inTheaters = document.getElementById("carousel-container1");
 var comingSoon = document.getElementById("carousel-container2");
 
 function getInTheater() {
-  fetch("https://imdb-api.com/en/API/InTheaters/k_ivg2w8iz")
+  fetch("https://imdb-api.com/en/API/InTheaters/k_7g9p0agq")
     .then(function (response) {
       return response.json();
     })
@@ -18,7 +18,7 @@ function getInTheater() {
 }
 
 function getComingSoon() {
-  fetch("https://imdb-api.com/en/API/ComingSoon/k_ivg2w8iz")
+  fetch("https://imdb-api.com/en/API/ComingSoon/k_7g9p0agq")
   .then(function (response) {
     return response.json();
   })
@@ -29,8 +29,8 @@ function getComingSoon() {
   });
 }
 
-getComingSoon();
-getInTheater();
+// getComingSoon();
+// getInTheater();
 
 function displayInTheater(list) {
   console.log(list);
@@ -83,8 +83,10 @@ function addButton() {
     // Fetch API to retrieve data
     console.log(event.target.parentElement);
     var imdbID = event.target.parentElement.getAttribute("data-id");
+    var modal = document.getElementById("myModal");
+    modal.querySelector(".modal-content").setAttribute("id",imdbID)
 
-    fetch("http://www.omdbapi.com/?i=" + imdbID + "&apikey=63da6da2")
+    fetch("http://www.omdbapi.com/?i=" + imdbID + "&apikey=ce851610")
       .then(function (response) {
         return response.json();
       })
@@ -99,9 +101,9 @@ function addButton() {
 
         // Update modal content dynamically
         modalContent.innerHTML = `
-        <h2>${title}</h2>
+        <h2 class="title"> ${title}</h2>
         <p>${description}</p>
-        <img src="${poster}" alt="${title} movie poster">
+        <img class="modal-img"src="${poster}" alt="${title} movie poster">
       `;
 
         // Display the modal
@@ -150,14 +152,16 @@ likeBtn.addEventListener("click", function () {
   console.log("saving");
   var favoritesArr = JSON.parse(localStorage.getItem("favorites")) || [];
 
-  var title = document.getElementById("modal-title").textContent;
-  var imgURL = document.getElementById("modal-img").src;
+  var modal = document.querySelector(".modal-content");
+  var imgURL = document.querySelector(".modal-img").src;
+  var title = document.querySelector(".title").textContent;
 
   var data = {
     title,
     imgURL,
+    modal
   };
-
+console.log(data)
   favoritesArr.push(data);
 
   localStorage.setItem("favorites", JSON.stringify(favoritesArr));
