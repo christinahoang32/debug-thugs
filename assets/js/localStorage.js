@@ -7,7 +7,8 @@ var favoritesListEl = document.getElementById("favorites-list");
 for (i = 0; i < savedItems.length; i++) {
     console.log(savedItems[i])
 
-    const newDiv = document.createElement("div")
+    const newDiv = document.createElement("div");
+    newDiv.classList.add("slide");
 
     const newImg = document.createElement("img");
     newImg.src = savedItems[i].imgURL;
