@@ -6,7 +6,7 @@ var inTheaters = document.getElementById("carousel-container1");
 var comingSoon = document.getElementById("carousel-container2");
 
 function getInTheater() {
-  fetch("https://imdb-api.com/en/API/InTheaters/k_ivg2w8iz")
+  fetch("https://imdb-api.com/en/API/InTheaters/k_7g9p0agq")
     .then(function (response) {
       return response.json();
     })
@@ -18,7 +18,7 @@ function getInTheater() {
 }
 
 function getComingSoon() {
-  fetch("https://imdb-api.com/en/API/ComingSoon/k_ivg2w8iz")
+  fetch("https://imdb-api.com/en/API/ComingSoon/k_7g9p0agq")
   .then(function (response) {
     return response.json();
   })
@@ -96,11 +96,19 @@ function addButton() {
         var title = data.Title;
         var description = data.Plot;
         var poster = data.Poster;
-
+        var ratings = data.imdbRating;
+        var genre = data.Genre;
+        var rated = data.Rated;
+        var actors = data.Actors;
+  
         // Update modal content dynamically
         modalContent.innerHTML = `
         <h2>${title}</h2>
         <p>${description}</p>
+        <p>IMDb Rating: ${ratings}</p>
+        <p>Genre: ${genre}</p>
+        <p>Motion Picture Rated: ${rated}</p>
+        <p>Actors: ${actors}</p>
         <img src="${poster}" alt="${title} movie poster">
       `;
 
