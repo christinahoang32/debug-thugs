@@ -16,7 +16,9 @@ p {
   line-height: 1.5em;
 }
 
-after { clear: both; }
+after {
+  clear: both;
+}
 
 .login {
   margin: 50px auto;
@@ -76,6 +78,7 @@ after { clear: both; }
   cursor: pointer;
   transition: background 0.3s ease-in-out;
 }
+
 #login form input[type="submit"]:hover {
   background: #16aa56;
 }
