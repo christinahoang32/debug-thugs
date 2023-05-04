@@ -6,7 +6,7 @@ var inTheaters = document.getElementById("carousel-container1");
 var comingSoon = document.getElementById("carousel-container2");
 
 function getInTheater() {
-  fetch("https://imdb-api.com/en/API/InTheaters/k_7g9p0agq")
+  fetch("https://imdb-api.com/en/API/InTheaters/k_h19lyz0m")
     .then(function (response) {
       return response.json();
     })
@@ -18,15 +18,15 @@ function getInTheater() {
 }
 
 function getComingSoon() {
-  fetch("https://imdb-api.com/en/API/ComingSoon/k_7g9p0agq")
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    // Extract relevant data
-    displayComingSoon(data.items);
-    console.log(data);
-  });
+  fetch("https://imdb-api.com/en/API/ComingSoon/k_h19lyz0m")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      // Extract relevant data
+      displayComingSoon(data.items);
+      console.log(data);
+    });
 }
 
 getComingSoon();
@@ -84,7 +84,7 @@ function addButton() {
     console.log(event.target.parentElement);
     var imdbID = event.target.parentElement.getAttribute("data-id");
     var modal = document.getElementById("myModal");
-    modal.querySelector(".modal-content").setAttribute("id",imdbID)
+    modal.querySelector(".modal-content").setAttribute("id", imdbID);
 
     fetch("https://www.omdbapi.com/?i=" + imdbID + "&apikey=ce851610")
       .then(function (response) {
@@ -102,7 +102,7 @@ function addButton() {
         var genre = data.Genre;
         var rated = data.Rated;
         var actors = data.Actors;
-  
+
         // Update modal content dynamically
         modalContent.innerHTML = `
         <h2 class="title"> ${title}</h2>
@@ -111,7 +111,6 @@ function addButton() {
         <p>Genre: ${genre}</p>
         <p>Motion Picture Rated: ${rated}</p>
         <p>Actors: ${actors}</p>
-        <img src="${poster}" alt="${title} movie poster">
         <img class="modal-img"src="${poster}" alt="${title} movie poster">
       `;
 
@@ -168,9 +167,9 @@ likeBtn.addEventListener("click", function () {
   var data = {
     title,
     imgURL,
-    modal
+    modal,
   };
-console.log(data)
+  console.log(data);
   favoritesArr.push(data);
 
   localStorage.setItem("favorites", JSON.stringify(favoritesArr));

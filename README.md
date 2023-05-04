@@ -2,10 +2,9 @@
 
 ## Description
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+As big movie lovers we created a list of movies that are coming soon as well as movies that are in theaters. We wanted to be able to save the movies that we were looking forward to or is our favorite movie that we've seen this year.
+
+We wanted to make sure that the data that we're pulling is dynamic, so when we click on a movie, it pulls in all the right data so it's all dynamic.
 
 ## Table of Contents
 
@@ -23,11 +22,15 @@ Final Link: https://christinahoang32.github.io/debug-thugs/
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+When you first access the page, an api will pull a list of the movies that are in theaters. You can click on the round arrow buttons to scroll right and left.<br><br>
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+![alt text](assets/images/mainPage.jpg)  
 
-![alt text](assets/images/mainPage.jpg)
+<br><br>When you click on a movie poster image, it will pull up a modal with information about the movie. At the bottom of the modal there's a like button that you can click to save your favorite movies to local storage.<br><br>
+
+![alt text](assets/images/modal.jpg)  (will need to update image when final modal information is updated)
+
+<br><br>(add one more image that will showcase the favorite tab. Will need to add once favorite page is ready)
 
 ## Credits
 
@@ -44,8 +47,13 @@ Bulma CSS Framework: https://bulma.io/
 **Tutorials:**  
 Modal Tutorial: https://www.w3schools.com/howto/howto_css_modals.asp  
 Web Carousel: https://web-crunch.com/posts/tailwind-css-movie-production-landing-page  
+YouTube Tutorials: https://www.youtube.com/@ProgrammingDuck  
 
+**Tutors:**  
+Francisco Rivera  
+Kenny Igbechi  
+Erik Hirsch (tutoring session)
 
 ## Future Features
 
-Working back and forth buttons working on the web carousel
+Register and login feature
