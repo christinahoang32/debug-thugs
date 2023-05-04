@@ -29,8 +29,8 @@ function getComingSoon() {
   });
 }
 
-// getComingSoon();
-// getInTheater();
+getComingSoon();
+getInTheater();
 
 function displayInTheater(list) {
   console.log(list);
