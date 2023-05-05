@@ -16,16 +16,18 @@
 
 <body>
   <header>
-    <h1 class="box has-background-primary-dark is-size-1 has-text-weight-bold">Debug Thug's Movie Database<span></h1>
-    <nav class="breadcrumb is-right" aria-label="breadcrumbs">
-      <ul>
-        <li class="button is-primary is-light is-active" aria-current="page"><a href="index.html">Home</a></li>
-        <li class="button is-primary"><a href="favorite.html">Favorites</a></li>
-        <!--<li class="button is-primary"><a href="signup.html">Register</a></li>-->
-        <!--<li class="button is-primary"><a href="login.html">Login</a></li>-->
+    <div class="box has-background-primary-dark columns">
+      <h1 class="is-one-half title is-1 has-text-dark">Debug Thug's Movie List</h1>
+    </div>
+    <!-- <nav class="breadcrumb is-right" aria-label="breadcrumbs column"> -->
+      <ul class="" aria-label=''>
+        <li class="button is-primary is-light is-active" aria-current="page"><a class="is-size-5" href="index.html">Home</a></li>
+        <li class="button is-primary"><a class="is-size-5" href="favorite.html">Favorites</a></li>
+        <li class="button is-primary"><a id="currentDay" class="is-size-5" >Date Here</a></li>
       </ul>
-    </nav>
+    <!-- </nav> -->
   </header>
+
   <main>
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -41,7 +43,7 @@
     <div class="border featured">
       <h1 class="has-background-grey-light box is-size-4 has-text-weight-bold">In Theaters Now</h1>
 
-      <div class="has-background-link-light section is-medium carousel" data-carousel>
+      <div class="has-background-link-light section carousel" data-carousel>
         <div class="carousel-buttons">
           <button class="carousel-button carousel-button_previous" data-carousel-button-previous>
             <span class="fas fa-chevron-circle-right"></span></button>
@@ -51,66 +53,69 @@
         <div class="has-text-centered slides" data-carousel-slides-container id="carousel-container1">
           <div class='slide myBtn' data-id="tt6718170">
             <img
-              src="https://m.media-amazon.com/images/M/MV5BOTJhNzlmNzctNTU5Yy00N2YwLThhMjQtZDM0YjEzN2Y0ZjNhXkEyXkFqcGdeQXVyMTEwMTQ4MzU5._V1_Ratio0.6699_AL_.jpg" />
+              src= />
             <p>Title</p>
           </div>
           <div class='slide myBtn' data-id="tt1517268">
             <img
-              src="https://m.media-amazon.com/images/M/MV5BOTJhNzlmNzctNTU5Yy00N2YwLThhMjQtZDM0YjEzN2Y0ZjNhXkEyXkFqcGdeQXVyMTEwMTQ4MzU5._V1_Ratio0.6699_AL_.jpg" />
+              src= />
             <p>Another Title</p>
           </div>
-          <div class="slide">
+          <div class="slide ">
             <!-- Anything can be here. Each slide can have any content -->
             <h2 class="is-size-4">Big George Foreman</h2>
-            <img src="Movie-IMG\Outnow\BigGeorgeForeman2023.jpg" />
+            <img src= />
           </div>
           <div class="slide">
             <!-- Anything can be here. Each slide can have any content -->
             <h2 class="is-size-4">Creed 3</h2>
-            <img src="Movie-IMG\Outnow\CreedIII_NewPoster_Press2765x4096.jpg" />
+            <img src= />
           </div>
           <div class="slide">
             <!-- Anything can be here. Each slide can have any content -->
             <h2 class="is-size-4">Dungeons & Dragons Honor Thieves</h2>
-            <img src="Movie-IMG\Outnow\DungeonsDragonsHonorThieves2023.jpg" />
+            <img src=/>
           </div>
           <div class="slide">
             <!-- Anything can be here. Each slide can have any content -->
             <h2 class="is-size-4">John Wick 4</h2>
-            <img src="Movie-IMG\Outnow\JW4_RGB.jpg" />
+            <img src= />
           </div>
           <div class="slide">
             <!-- Anything can be here. Each slide can have any content -->
             <h2 class="is-size-4">Polite PoliteSociety_Poster</h2>
-            <img src="Movie-IMG\Outnow\PoliteSociety_Poster.jpg" />
+            <img src= />
           </div>
           <div class="slide">
             <!-- Anything can be here. Each slide can have any content -->
             <h2 class="is-size-4">Return of the jedi</h2>
-            <img src="Movie-IMG\Outnow\ROTJ_40_ONESHEET-WEB.jpg" />
+            <img src= />
           </div>
           <div class="slide">
             <!-- Anything can be here. Each slide can have any content -->
             <h2 class="is-size-4">Super Mario Bro's</h2>
-            <img src="Movie-IMG\Outnow\SMB_2023.jpg" />
+            <img src=/>
           </div>
           <div class="slide">
             <!-- Anything can be here. Each slide can have any content -->
             <h2 class="is-size-4">Suzume</h2>
-            <img src="Movie-IMG\Outnow\Suzume_TheatricalPoster_US_400x600 (1).jpg" />
+            <img src= />
           </div>
           <div class="slide">
             <!-- Anything can be here. Each slide can have any content -->
             <h2 class="is-size-4">Scream 6</h2>
-            <img src="Movie-IMG\Outnow\under10mb_Scream6_Online_Payoff_FM2.jpg" />
+            <img src= />
           </div>
           <!-- <button class='slide' id="myBtn">Open Modal</button> -->
         </div>
       </div>
 
       <div class="coming-soon">
+
         <h1 class="has-background-grey-light box is-size-4 has-text-weight-bold">Coming to Theaters Soon!</h1>
-        <div class="has-background-link-light section is-medium carousel" data-carousel>
+
+        <div class="has-background-link-light section carousel" data-carousel>
+
           <div class="carousel-buttons">
             <button class="carousel-button carousel-button_previous" data-carousel-button-previous>
               <span class="fas fa-chevron-circle-right"></span></button>
@@ -175,6 +180,7 @@
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"
     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
   <script src="assets/js/modal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
   <script src="assets/js/script.js"></script>
   <script src="assets/js/localStorage.js"></script>
 </body>
