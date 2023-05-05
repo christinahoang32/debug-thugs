@@ -7,6 +7,10 @@ body {
   font-family: sans-serif;
 }
 
+header {
+  background-image: url("/assets/images/popcorn.jpg");
+}
+
 main {
   display: flex;
   flex-direction: column;
